@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.io;
 import java.util.concurrent.TimeUnit;
 class RD_Machine
 {
@@ -27,7 +28,7 @@ class RD_Machine
             System.out.println("Switching off...");
             try
             {
-                Thread.sleep(3000);
+                Thread.sleep(5000);
             }
             catch(Exception e)
             {
