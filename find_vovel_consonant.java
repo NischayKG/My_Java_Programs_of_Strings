@@ -3,14 +3,10 @@
 import java.util.*;
 class find_vovel_consonent
 {
-    public static void main(String arr[])
+    public void Calculate(String str)
     {
-        Scanner sc=new Scanner(System.in);
-        StringBuffer str=new StringBuffer(sc.nextLine());
-        String st=str.toString();
-        int vo=0,co=0;
-        int l=st.length();
-        char ch;
+         int l=str.length();
+        char ch='';
         for(int i=0;i<l;i++)
         {
             ch=str.charAt(i);
@@ -19,7 +15,15 @@ class find_vovel_consonent
             else
                 co++;
         }
-        System.out.println("vovels="+vo+" consonant="+co);
+        System.out.println("vovels-: "+vo+" consonant-: "+co);
 
+        
+    }
+    public static void main(String arr[])
+    {
+        Scanner sc=new Scanner(System.in);
+        StringBuffer str=new StringBuffer(sc.nextLine());
+        String st=str.toString();
+        Calculate(st);       
     }
 }
